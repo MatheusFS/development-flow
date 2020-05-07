@@ -1,0 +1,41 @@
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    
+    <div style="height: 40px;">
+        <div class="alert alert-success rounded-0" id="status" style="display: none;"></div>
+    </div>
+
+    <form action="javascript:void(0)" class="p-3">
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <span class="input-group-text">HTTPS? <input class="ml-2" type="checkbox" id="https_dev"></span>
+            </div>
+            <input class="form-control" type="text" id="domain_dev" placeholder="Development domain">
+        </div>
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <span class="input-group-text">HTTPS? <input class="ml-2" type="checkbox" id="https_sta"></span>
+            </div>
+            <input class="form-control" type="text" id="domain_sta" placeholder="Staging domain">
+        </div>
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <span class="input-group-text">HTTPS? <input class="ml-2" type="checkbox" id="https_pro"></span>
+            </div>
+            <input class="form-control" type="text" id="domain_pro" placeholder="Production domain">
+        </div>
+        <button class="btn btn-primary btn-block" id="save">Save</button>
+    </form>
+
+    <script src="options.js"></script>
+</body>
+
+</html>
